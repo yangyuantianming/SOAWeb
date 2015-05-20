@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Result</title>
+    <meta charset="utf-8">
+  </head>
+  <body>
+    <!-- Graph -->
+    {% for vertex in graph.vertices %}
+    <p>Vertex ID: {{ vertex.id }}, Vertex attribute example: {{ vertex.attr }}</p>
+    {% endfor %}
+    {% for edge in graph.edges %}
+    <p>Edge ID: {{ edge.id }}, Endpoints: {{ edge.start }} {{ edge.end }}, Attribute Example: {{ edge.attr }}</p>
+    {% endfor %}
+
+    <!-- List -->
+    <ul>
+      {% for item in searchlist %}
+      <li>[{{ item.id }}] {{ item.title }}: {{ item.desc }} ...</li>
+      {% endfor %}
+    </ul>
+  </body>
+</html>

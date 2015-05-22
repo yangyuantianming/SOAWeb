@@ -45,7 +45,7 @@ def details():
     """
     try:
         # id = request.form['id']
-        return jsonify(example.details)
+        return jsonify(dict(retcode=0,details=example.details))
     except KeyError:
         return jsonify(dict(retcode=1))
 

@@ -1,14 +1,16 @@
 graph = {
     'vertices': [
         {
-            'id': 1,
+            'id': 1, #节点id
             'attr': {
+                'id':2, #这里是词项的id
                 'name': 'Data Mining'
             }
         },
         {
-            'id': 2,
+            'id': 2, #节点id
             'attr': {
+                'id':1,  #这里是词项的id
                 'name': 'Machine Learning'
             }
         }
@@ -16,8 +18,8 @@ graph = {
 
     'edges': [
         {
-            'start': 1,
-            'end': 2,
+            'start': 1, #节点id
+            'end': 2, #节点id
             'attr': {
                 'weight': 2.0
             }

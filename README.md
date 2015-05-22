@@ -18,7 +18,7 @@ SOAWeb
 
 ###/api/details
 	Ajax接口，用于获取某个特定词项的Wiki详细信息
-	输入：
+	输入GET：
 		词项id，在searchlist中获得
 	输出：
 		retcode，成功与否标志
@@ -26,7 +26,7 @@ SOAWeb
 
 ###/api/related
 	Ajax接口，用于用户点击图谱中某个点后返回其附近的信息
-	输入：
+	输入GET：
 		词项id
 	输出：
 		同search页面，2个json:graph和searchlist
